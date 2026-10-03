@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовый магазин</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 420px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        .balance {
+            background: #f5f7ff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        .balance-label {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .balance-value {
+            color: #333;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        .note {
+            color: #aaa;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">💳</div>
+        <h1>Тестовый кошелёк</h1>
+        <p style="color:#888; font-size:14px;">Демо-версия платёжной системы</p>
+
+        <div class="balance">
+            <div class="balance-label">Ваш баланс</div>
+            <div class="balance-value">1 000 ₽</div>
+        </div>
+
+        <a href="payment.html" class="btn">Пополнить баланс</a>
+
+        <p class="note">Это тестовый сайт. Реальные деньги не списываются.</p>
+    </div>
+</body>
+</html>
